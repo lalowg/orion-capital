@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ORION CAPITAL — Wealth With Purpose</title>
+<meta name="description" content="ORION CAPITAL is a fictional private planning house. Name what your money is for, then trace hypothetical scenarios in today's dollars with an educational planning simulator. Illustrative only, not financial advice.">
+<meta name="theme-color" content="#0B1530">
+<link rel="canonical" href="https://orion-capital-nine.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ORION CAPITAL">
+<meta property="og:title" content="ORION CAPITAL — Wealth With Purpose">
+<meta property="og:description" content="An educational planning simulator: set a purpose, move the assumptions, compare scenarios in today's dollars. Hypothetical figures only.">
+<meta property="og:url" content="https://orion-capital-nine.vercel.app/">
+<meta property="og:image" content="https://orion-capital-nine.vercel.app/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ORION CAPITAL — Wealth With Purpose">
+<meta name="twitter:description" content="Set a purpose, move the assumptions, compare scenarios in today's dollars. Educational and hypothetical.">
+<meta name="twitter:image" content="https://orion-capital-nine.vercel.app/og.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&amp;family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&amp;display=swap">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.orionReady)document.documentElement.classList.remove('js');},3000);</script>
+<script type="module" src="main.js"></script>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+
+<svg class="defs" aria-hidden="true" focusable="false" width="0" height="0">
+  <defs>
+    <symbol id="mark" viewBox="0 0 48 48">
+      <circle cx="24" cy="24" r="22.5" fill="none" stroke="currentColor" stroke-width="1"/>
+      <g stroke="var(--mark-line, #B89B5E)" stroke-width=".9" fill="none" opacity=".85">
+        <path d="M15 11 L19.6 25.4 M33.4 12.6 L28.4 22.6 M19.6 25.4 L24 24 L28.4 22.6 M19.6 25.4 L16.4 37 M28.4 22.6 L33 36"/>
+      </g>
+      <g fill="var(--mark-star, #B89B5E)">
+        <circle cx="15" cy="11" r="1.9"/>
+        <circle cx="33.4" cy="12.6" r="1.5"/>
+        <circle cx="19.6" cy="25.4" r="1.6"/>
+        <circle cx="24" cy="24" r="1.6"/>
+        <circle cx="28.4" cy="22.6" r="1.6"/>
+        <circle cx="16.4" cy="37" r="1.4"/>
+        <circle cx="33" cy="36" r="1.9"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="site-header" data-header>
+  <p class="strip">Educational illustration <span aria-hidden="true">·</span> Hypothetical figures <span aria-hidden="true">·</span> Not financial advice</p>
+  <div class="bar">
+    <a class="brand" href="#top" aria-label="ORION CAPITAL, back to the top">
+      <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark"/></svg>
+      <span class="brand__word" aria-hidden="true">ORION <span>CAPITAL</span></span>
+    </a>
+    <nav class="nav" id="site-nav" data-nav aria-label="Sections">
+      <ul class="nav__list">
+        <li><a href="#planner">Planner</a></li>
+        <li><a href="#principles">Principles</a></li>
+        <li><a href="#movements">Four movements</a></li>
+        <li><a href="#purposes">Purposes</a></li>
+        <li><a href="#method">Method</a></li>
+        <li><a href="#ledger">Ledger</a></li>
+      </ul>
+      <a class="nav__cta" href="#conversation">Request a conversation</a>
+    </nav>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle__lines" aria-hidden="true"></span><span class="nav-toggle__label">Menu</span></button>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+  <!-- Planner -->
+  <section id="planner" class="hero" aria-labelledby="hero-title">
+    <svg class="hero__sky" data-starfield viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"></svg>
+
+    <div class="hero__intro">
+      <p class="eyebrow"><span class="eyebrow__star" aria-hidden="true"></span>The planning room</p>
+      <h1 id="hero-title">Wealth with <em>purpose.</em></h1>
+      <p class="hero__lede">Before any product, a purpose. Name what the money is for, then move the assumptions and watch the same effort trace very different paths, always shown in today's dollars as well as tomorrow's.</p>
+    </div>
+
+    <div class="stage" data-chart-panel>
+      <span class="corner corner--tl" aria-hidden="true"></span><span class="corner corner--tr" aria-hidden="true"></span><span class="corner corner--bl" aria-hidden="true"></span><span class="corner corner--br" aria-hidden="true"></span>
+      <div class="readouts">
+        <div class="readout"><p class="readout__k">Contributed</p><p class="readout__v" data-readout="contrib">$0</p><p class="readout__b" data-readout-b="contrib"></p></div>
+        <div class="readout readout--n"><p class="readout__k">Projected</p><p class="readout__v" data-readout="nominal">$0</p><p class="readout__b" data-readout-b="nominal"></p></div>
+        <div class="readout readout--r"><p class="readout__k">In today's dollars</p><p class="readout__v" data-readout="real">$0</p><p class="readout__b" data-readout-b="real"></p></div>
+        <div class="readout readout--p"><p class="readout__k">Purpose</p><p class="readout__v" data-purpose-read>—</p><p class="readout__b" data-purpose-sub></p></div>
+      </div>
+      <div class="chart" data-chart="main" tabindex="0" role="group" aria-label="Scenario chart. Use the left and right arrow keys to read values year by year." aria-describedby="chart-help">
+        <svg class="chart__svg" aria-hidden="true" focusable="false"></svg>
+        <div class="chart__tip" aria-hidden="true"></div>
+      </div>
+      <ul class="legend" aria-label="Chart key">
+        <li class="legend__n">Projected</li>
+        <li class="legend__r">In today's dollars</li>
+        <li class="legend__c">Contributed</li>
+        <li class="legend__g">Purpose target</li>
+        <li class="legend__b">Scenario B</li>
+      </ul>
+      <p class="visually-hidden" id="chart-help">Keyboard: arrow keys move one year, Page Up and Page Down move five, Home and End jump to the ends, Escape clears.</p>
+      <p class="visually-hidden" data-cursor-live aria-live="polite"></p>
+    </div>
+
+    <div class="controls" data-controls data-edit="a">
+      <fieldset class="purpose">
+        <legend>What is it for?</legend>
+        <div class="purpose__opts">
+          <label class="pchip"><input type="radio" name="purpose" value="independence"><span>Independence</span></label>
+          <label class="pchip"><input type="radio" name="purpose" value="education"><span>Education</span></label>
+          <label class="pchip"><input type="radio" name="purpose" value="home"><span>A home</span></label>
+          <label class="pchip"><input type="radio" name="purpose" value="legacy"><span>Legacy</span></label>
+          <label class="pchip"><input type="radio" name="purpose" value="none"><span>No target</span></label>
+        </div>
+        <p class="purpose__note" data-purpose-note>Choosing a purpose loads an illustrative example target and horizon. You can change both.</p>
+      </fieldset>
+
+      <div class="scen" role="group" aria-label="Scenarios">
+        <div class="scen__edit">
+          <span class="scen__k" id="edit-k">Sliders edit</span>
+          <button type="button" class="seg" data-edit-btn="a" aria-pressed="true" aria-describedby="edit-k">Scenario A</button>
+          <button type="button" class="seg seg--b" data-edit-btn="b" aria-pressed="false" aria-describedby="edit-k">Scenario B</button>
+        </div>
+        <button type="button" class="switch" data-compare aria-pressed="false"><span class="switch__track" aria-hidden="true"></span>Compare scenarios</button>
+      </div>
+
+      <div class="ctl">
+        <div class="ctl__row"><label for="f-initial">Starting amount</label><output for="f-initial" data-out-field="initial"></output></div>
+        <input id="f-initial" type="range" min="0" max="250000" step="1000" data-field="initial">
+      </div>
+      <div class="ctl">
+        <div class="ctl__row"><label for="f-monthly">Monthly contribution</label><output for="f-monthly" data-out-field="monthly"></output></div>
+        <input id="f-monthly" type="range" min="0" max="5000" step="50" data-field="monthly">
+      </div>
+      <div class="ctl">
+        <div class="ctl__row"><label for="f-years">Horizon</label><output for="f-years" data-out-field="years"></output></div>
+        <input id="f-years" type="range" min="1" max="45" step="1" data-field="years">
+      </div>
+      <div class="ctl">
+        <div class="ctl__row"><label for="f-rate">Hypothetical annual return</label><a class="term-link" href="#term-hypothetical-return" aria-label="Definition of hypothetical return">What is this?</a><output for="f-rate" data-out-field="rate"></output></div>
+        <input id="f-rate" type="range" min="0" max="10" step="0.25" data-field="rate">
+      </div>
+      <div class="ctl">
+        <div class="ctl__row"><label for="f-inflation">Assumed inflation</label><a class="term-link" href="#term-inflation" aria-label="Definition of inflation">What is this?</a><output for="f-inflation" data-out-field="inflation"></output></div>
+        <input id="f-inflation" type="range" min="0" max="8" step="0.25" data-field="inflation">
+      </div>
+      <div class="ctl ctl--goal">
+        <div class="ctl__row"><label for="f-goal">Purpose target, in today's dollars</label><a class="term-link" href="#term-purpose-target" aria-label="Definition of purpose target">What is this?</a><output for="f-goal" data-out-field="goal"></output></div>
+        <input id="f-goal" type="range" min="0" max="2000000" step="10000" data-field="goal">
+      </div>
+
+      <div class="presets" role="group" aria-labelledby="presets-k">
+        <p class="presets__k" id="presets-k">Quick comparisons: set scenario B to…</p>
+        <button type="button" class="preset" data-preset="later">Start five years later</button>
+        <button type="button" class="preset" data-preset="more">Add $250 a month</button>
+        <button type="button" class="preset" data-preset="rate">Two points lower return</button>
+        <button type="button" class="preset" data-preset="inflation">Inflation at 4%</button>
+      </div>
+      <button type="button" class="reset" data-reset>Reset all assumptions</button>
+    </div>
+
+    <div class="notes">
+      <p class="reading" data-reading aria-live="polite"></p>
+      <details class="table-wrap">
+        <summary>Show these figures as a table</summary>
+        <div data-table></div>
+      </details>
+      <p class="footnote"><strong>Illustrative model.</strong> A constant hypothetical annual return is compounded monthly, with contributions at the end of each month. "Today's dollars" removes the assumed inflation. No taxes, fees or volatility are included. This is educational arithmetic, not a forecast, a recommendation or financial advice.</p>
+    </div>
+  </section>
+
+  <!-- Principles -->
+  <section id="principles" class="principles" aria-labelledby="principles-title">
+    <header class="sec-head">
+      <p class="eyebrow"><span class="eyebrow__star" aria-hidden="true"></span>Principles</p>
+      <h2 id="principles-title" data-reveal>Three fixed stars to plan by.</h2>
+    </header>
+    <ol class="ledger-cols">
+      <li class="col" data-reveal>
+        <p class="col__num" aria-hidden="true">I</p>
+        <svg class="col__fig" viewBox="0 0 160 90" aria-hidden="true" focusable="false"><path class="draw" d="M14 70 L58 30 L96 52 L146 18"/><circle cx="14" cy="70" r="3"/><circle cx="58" cy="30" r="3"/><circle cx="96" cy="52" r="3"/><circle cx="146" cy="18" r="4.5" class="hl"/></svg>
+        <h3>Purpose before product</h3>
+        <p>A sum of money means little until it is attached to something: freedom from work, a child's education, a home, a gift that outlives you. We name the purpose first and price it in today's dollars.</p>
+      </li>
+      <li class="col" data-reveal>
+        <p class="col__num" aria-hidden="true">II</p>
+        <svg class="col__fig" viewBox="0 0 160 90" aria-hidden="true" focusable="false"><path class="draw" d="M10 80 C60 79 90 72 112 52 C128 38 138 22 150 8"/><path class="draw draw--soft" d="M10 80 L150 52"/><circle cx="150" cy="8" r="4.5" class="hl"/></svg>
+        <h3>Time over timing</h3>
+        <p>The horizon does more work than the decimal points. Starting earlier with less can trace a steeper path than starting later with more, and no one can reliably choose the right month to begin.</p>
+      </li>
+      <li class="col" data-reveal>
+        <p class="col__num" aria-hidden="true">III</p>
+        <svg class="col__fig" viewBox="0 0 160 90" aria-hidden="true" focusable="false"><path class="draw" d="M10 78 C64 74 100 54 150 14"/><path class="draw draw--soft" d="M10 78 C64 76 104 64 150 40"/><path d="M150 18 V36" class="arrow"/><circle cx="150" cy="40" r="4.5" class="hl"/></svg>
+        <h3>Today's dollars, always</h3>
+        <p>A projected figure decades away flatters everyone. We show both lines side by side, the projected amount and what it would buy today, so inflation is never left out of the conversation.</p>
+      </li>
+    </ol>
+    <div class="figures" data-reveal>
+      <p class="figures__cap">Hypothetical illustration: <span data-fig="monthly"></span> a month for <span data-fig="years"></span> at an assumed <span data-fig="rate"></span> return.</p>
+      <div class="figures__row">
+        <div class="fig"><p class="fig__v" data-fig="contrib"></p><p class="fig__k">put in over the years</p></div>
+        <div class="fig fig--brass"><p class="fig__v" data-fig="nominal"></p><p class="fig__k">projected at the end, before inflation</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Four movements -->
+  <section id="movements" class="story" aria-labelledby="story-title">
+    <header class="sec-head sec-head--story">
+      <p class="eyebrow"><span class="eyebrow__star" aria-hidden="true"></span>Four movements</p>
+      <h2 id="story-title" data-reveal>How one modest habit becomes a plan.</h2>
+      <p class="sec-head__lede" data-reveal>One hypothetical saver, <span data-story-val="monthly"></span> a month, told in four movements. Scroll, or use the steps.</p>
+    </header>
+    <div class="story__grid">
+      <div class="story__frame">
+        <ol class="story__nav" aria-label="Story steps">
+          <li><button type="button" data-goto="1">1 · Contribute</button></li>
+          <li><button type="button" data-goto="2">2 · Wait</button></li>
+          <li><button type="button" data-goto="3">3 · Discount</button></li>
+          <li><button type="button" data-goto="4">4 · Begin later</button></li>
+        </ol>
+        <div class="chart chart--story" data-chart="story">
+          <svg class="chart__svg" aria-hidden="true" focusable="false"></svg>
+        </div>
+        <p class="story__cap" data-story-caption aria-live="polite">Step 1 of 4 · Contribute</p>
+      </div>
+      <div class="story__steps">
+        <article class="step" id="step-1" data-step="1">
+          <p class="step__k">Movement I</p>
+          <h3>Contribute</h3>
+          <p>Without any growth at all, <span data-story-val="monthly"></span> a month for <span data-story-val="years"></span> adds up to <strong data-story-val="contrib"></strong>. This straight line is the only part you control directly.</p>
+        </article>
+        <article class="step" id="step-2" data-step="2">
+          <p class="step__k">Movement II</p>
+          <h3>Wait</h3>
+          <p>At a hypothetical <span data-story-val="rate"></span> a year, the same contributions trace a curve that ends near <strong data-story-val="nominal"></strong>. By then about <strong data-story-val="share"></strong> of the total would be growth rather than money put in.</p>
+        </article>
+        <article class="step" id="step-3" data-step="3">
+          <p class="step__k">Movement III</p>
+          <h3>Discount</h3>
+          <p>Now remove an assumed <span data-story-val="inflation"></span> inflation. In today's dollars the end figure is closer to <strong data-story-val="real"></strong>. The lower line is the honest one, and it is the one purposes should be measured against.</p>
+        </article>
+        <article class="step" id="step-4" data-step="4">
+          <p class="step__k">Movement IV</p>
+          <h3>Begin later</h3>
+          <p>Start the same habit ten years later and stop on the same date. You would put in <strong data-story-val="contribDiff"></strong> less, yet end with about <strong data-story-val="realDiff"></strong> less in today's dollars. The decade is the asset.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Purposes -->
+  <section id="purposes" class="purposes" aria-labelledby="purposes-title">
+    <header class="sec-head">
+      <p class="eyebrow"><span class="eyebrow__star" aria-hidden="true"></span>Planning by purpose</p>
+      <h2 id="purposes-title" data-reveal>Four purposes, charted like constellations.</h2>
+      <p class="sec-head__lede" data-reveal>Each purpose is a pattern of dates and amounts rather than a single number. Choose one to read how we would approach it, then load its illustrative example into the planner.</p>
+    </header>
+    <div class="atlas">
+      <div class="atlas__map">
+        <svg class="atlas__svg" viewBox="0 0 1000 640" aria-hidden="true" focusable="false" data-atlas></svg>
+        <button type="button" class="atlas__btn" data-purpose-btn="independence" style="--x:23%;--y:56%" aria-pressed="true"><span class="atlas__no">01</span>Independence</button>
+        <button type="button" class="atlas__btn" data-purpose-btn="education" style="--x:72%;--y:47%" aria-pressed="false"><span class="atlas__no">02</span>Education</button>
+        <button type="button" class="atlas__btn" data-purpose-btn="home" style="--x:27%;--y:93%" aria-pressed="false"><span class="atlas__no">03</span>A home</button>
+        <button type="button" class="atlas__btn" data-purpose-btn="legacy" style="--x:74%;--y:93%" aria-pressed="false"><span class="atlas__no">04</span>Legacy</button>
+      </div>
+      <article class="atlas__detail" aria-live="polite" data-purpose-detail>
+        <p class="atlas__k" data-pd="k">Purpose 01</p>
+        <h3 data-pd="name">Independence</h3>
+        <p class="atlas__line" data-pd="line"></p>
+        <dl class="atlas__ex">
+          <div><dt>Illustrative target</dt><dd data-pd="target"></dd></div>
+          <div><dt>Illustrative horizon</dt><dd data-pd="years"></dd></div>
+        </dl>
+        <p class="atlas__qk">Questions we would ask first</p>
+        <ul class="atlas__qs" data-pd="qs"></ul>
+        <button type="button" class="btn btn--brass" data-load-purpose>Load this example into the planner</button>
+        <p class="atlas__fine">Example figures are illustrative, chosen to show the shape of a plan. They are not recommendations.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Method -->
+  <section id="method" class="method" aria-labelledby="method-title">
+    <header class="sec-head">
+      <p class="eyebrow"><span class="eyebrow__star" aria-hidden="true"></span>Method</p>
+      <h2 id="method-title" data-reveal>A planning conversation, in four stations.</h2>
+    </header>
+    <ol class="timeline" data-timeline>
+      <li class="tl-step">
+        <p class="tl-step__no">01</p>
+        <h3>Listen</h3>
+        <p>We begin with what the money is for, who depends on it and which dates cannot move. Products are not discussed.</p>
+      </li>
+      <li class="tl-step">
+        <p class="tl-step__no">02</p>
+        <h3>Map</h3>
+        <p>Each purpose becomes an amount and a date in today's dollars. Competing purposes are ranked, out loud, by you.</p>
+      </li>
+      <li class="tl-step">
+        <p class="tl-step__no">03</p>
+        <h3>Model</h3>
+        <p>Scenarios are traced side by side with every assumption written down: a cautious line, a central line, a late start.</p>
+      </li>
+      <li class="tl-step">
+        <p class="tl-step__no">04</p>
+        <h3>Review</h3>
+        <p>Once a year, purposes are revisited before figures. Lives change, so the plan is expected to change with them.</p>
+      </li>
+    </ol>
+    <blockquote class="pull" data-reveal>
+      <p>A plan is a set of assumptions you agree to revisit, written down so that you can.</p>
+    </blockquote>
+  </section>
+
+  <!-- Ledger -->
+  <section id="ledger" class="ledger" aria-labelledby="ledger-title">
+    <aside class="ledger__aside">
+      <p class="eyebrow"><span class="eyebrow__star" aria-hidden="true"></span>The ledger</p>
+      <h2 id="ledger-title" data-reveal>Every word on this page, defined.</h2>
+      <p class="ledger__lede">Finance hides behind vocabulary. These are the terms the planner uses, in plain English. Each has its own link, so the "What is this?" notes above open the right entry.</p>
+    </aside>
+    <div class="ledger__list">
+      <details id="term-compounding"><summary><span class="ledger__l">C</span>Compounding</summary><p>Growth earned on earlier growth. In the planner, a hypothetical annual rate is converted into an equivalent monthly rate and applied every month, so the curve steepens over time.</p></details>
+      <details id="term-contribution"><summary><span class="ledger__l">C</span>Contribution</summary><p>Money you add: a starting amount once, then a monthly amount. Contributions are the straight hatched band at the base of the chart.</p></details>
+      <details id="term-horizon"><summary><span class="ledger__l">H</span>Horizon</summary><p>The number of years between today and the date a purpose needs its money. It is usually the most powerful assumption in the model.</p></details>
+      <details id="term-hypothetical-return"><summary><span class="ledger__l">H</span>Hypothetical return</summary><p>An assumed constant yearly growth rate used for illustration only. Real returns vary from year to year, can be negative and are never guaranteed. The planner's range of 0–10% is for exploring shapes, not for predicting results.</p></details>
+      <details id="term-inflation"><summary><span class="ledger__l">I</span>Inflation</summary><p>The general rise in prices over time. The planner assumes a constant yearly rate and uses it to convert projected amounts into today's dollars.</p></details>
+      <details id="term-projected"><summary><span class="ledger__l">P</span>Projected (nominal) value</summary><p>The amount the model shows at a future date, before adjusting for inflation. It is the upper brass line.</p></details>
+      <details id="term-purpose-target"><summary><span class="ledger__l">P</span>Purpose target</summary><p>What a purpose would cost if you paid for it today. Because it is in today's dollars, the planner compares it with the "today's dollars" line, not the projected one.</p></details>
+      <details id="term-sequence-risk"><summary><span class="ledger__l">S</span>Sequence risk</summary><p>The risk that poor years arrive at an unlucky moment, such as just before you need the money. A constant-rate model like this one cannot show it, which is one reason it is only an illustration.</p></details>
+      <details id="term-todays-dollars"><summary><span class="ledger__l">T</span>Today's dollars (real value)</summary><p>A future amount expressed in what it would buy now. The platinum line on the chart shows this value.</p></details>
+      <details id="term-volatility"><summary><span class="ledger__l">V</span>Volatility</summary><p>How much values rise and fall along the way. Real paths zigzag. The planner draws smooth curves on purpose, to keep attention on time, contributions and inflation.</p></details>
+    </div>
+  </section>
+
+  <!-- Conversation -->
+  <section id="conversation" class="contact" aria-labelledby="contact-title">
+    <div class="contact__intro">
+      <p class="eyebrow"><span class="eyebrow__star" aria-hidden="true"></span>A private conversation</p>
+      <h2 id="contact-title" data-reveal>Begin with a purpose, not a portfolio.</h2>
+      <p data-reveal>Tell us what you are planning for. In this concept, a first conversation lasts forty-five minutes, involves no products, and ends with your own assumptions written down for you to keep.</p>
+      <ol class="contact__list" data-reveal>
+        <li><span>i</span>You describe the purpose and the dates that matter.</li>
+        <li><span>ii</span>We trace two or three scenarios with you, in today's dollars.</li>
+        <li><span>iii</span>You leave with a one-page summary of the assumptions.</li>
+      </ol>
+    </div>
+
+    <form class="form" data-form novalidate aria-describedby="form-legal">
+      <p class="form__status" data-form-status role="alert"></p>
+      <div class="f">
+        <label for="c-name">Full name</label>
+        <input id="c-name" name="fullname" type="text" autocomplete="name" aria-describedby="c-name-err" required>
+        <p class="f-error" id="c-name-err" data-error-for="fullname"></p>
+      </div>
+      <div class="f">
+        <label for="c-email">Email</label>
+        <input id="c-email" name="email" type="email" autocomplete="email" inputmode="email" aria-describedby="c-email-err" required>
+        <p class="f-error" id="c-email-err" data-error-for="email"></p>
+      </div>
+      <div class="f">
+        <label for="c-purpose">Main purpose</label>
+        <select id="c-purpose" name="purpose" aria-describedby="c-purpose-err" required>
+          <option value="">Choose one</option>
+          <option value="independence">Independence</option>
+          <option value="education">Education</option>
+          <option value="home">A home</option>
+          <option value="legacy">Legacy and giving</option>
+          <option value="unsure">Not sure yet</option>
+        </select>
+        <p class="f-error" id="c-purpose-err" data-error-for="purpose"></p>
+      </div>
+      <fieldset class="f f--times" id="c-time" aria-describedby="c-time-err">
+        <legend>Preferred time</legend>
+        <div class="times">
+          <label class="tchip"><input type="radio" name="time" value="morning" id="c-time-first"><span>Morning</span></label>
+          <label class="tchip"><input type="radio" name="time" value="afternoon"><span>Afternoon</span></label>
+          <label class="tchip"><input type="radio" name="time" value="evening"><span>Early evening</span></label>
+        </div>
+        <p class="f-error" id="c-time-err" data-error-for="time"></p>
+      </fieldset>
+      <div class="f">
+        <label for="c-msg">Anything we should know? <span class="f__opt">(optional)</span></label>
+        <textarea id="c-msg" name="message" rows="4" aria-describedby="c-msg-count c-msg-err"></textarea>
+        <p class="f__count" id="c-msg-count" data-count>0 / 600</p>
+        <p class="f-error" id="c-msg-err" data-error-for="message"></p>
+      </div>
+      <div class="f f--check">
+        <label class="check"><input id="c-ok" name="agree" type="checkbox" aria-describedby="c-ok-err"><span>I understand ORION CAPITAL is a fictional concept and this form is an educational demo.</span></label>
+        <p class="f-error" id="c-ok-err" data-error-for="agree"></p>
+      </div>
+      <button class="btn btn--brass" type="submit">Request a conversation</button>
+      <p class="form__legal" id="form-legal">Portfolio demo: nothing is sent, stored or booked.</p>
+    </form>
+
+    <div class="form-done" data-form-done tabindex="-1" hidden>
+      <svg class="form-done__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark"/></svg>
+      <p class="form-done__k">Thank you, <span data-done-name></span>.</p>
+      <p>This is a portfolio demo, so no request was sent and no conversation has been booked. If ORION CAPITAL were real, this is where you would choose a time.</p>
+      <button type="button" class="btn btn--ghost" data-form-again>Write another request</button>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <svg class="footer__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#mark"/></svg>
+      <p class="footer__word">ORION <span>CAPITAL</span></p>
+      <p class="footer__tag">Wealth with purpose.</p>
+    </div>
+    <nav class="footer__nav" aria-label="Footer">
+      <ul>
+        <li><a href="#planner">Planner</a></li>
+        <li><a href="#principles">Principles</a></li>
+        <li><a href="#movements">Four movements</a></li>
+        <li><a href="#purposes">Purposes</a></li>
+        <li><a href="#method">Method</a></li>
+        <li><a href="#ledger">Ledger</a></li>
+        <li><a href="#conversation">Conversation</a></li>
+      </ul>
+    </nav>
+    <div class="credit">
+      <p class="credit__k">Credit</p>
+      <p class="credit__by">Designed &amp; built by <a href="https://www.linkedin.com/in/saadbashirmarketing/" target="_blank" rel="noopener" aria-label="Saad Bashir on LinkedIn (opens in a new tab)">Saad Bashir</a></p>
+      <p class="credit__note">Fictional concept brand — portfolio project.</p>
+      <a class="credit__more" href="https://saadbashirportfolio.vercel.app/websites.html">More work <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+  <p class="footer__legal">ORION CAPITAL is a fictional concept brand created for a portfolio. It does not offer financial products, advice or services of any kind. The planner is an educational illustration built on hypothetical, constant assumptions. It is not a forecast and makes no claim about future returns.</p>
+</footer>
+</body>
+</html>
